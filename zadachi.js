@@ -1,20 +1,19 @@
-function findUnique(arr) {
-    // Створити об'єкт для зберігання кількості входжень кожного елемента
-    let counts = {};
-    
-    // Перевірити кожен елемент масиву
-    for (let i = 0; i < arr.length; i++) {
-      let num = arr[i];
-      
-      // Якщо елемент вже з'являвся в масиві, то він не є унікальним
-      if (counts[num]) {
-        return false;
-      }
-      
-      // Якщо елемент ще не з'являвся, то додати його до об'єкту з лічильниками
-      counts[num] = 1;
-    }
-    
-    // Якщо всі елементи були унікальними, то повернути true
-    return true;
-  }
+let x = 1;
+let y = 2;
+
+let res1 = "" + x + y;
+console.log(res1); // "12"
+console.log(typeof res1); // "string"
+
+let res2 = Boolean(x) + "" + y;
+console.log(res2); // "true2"
+console.log(typeof res2); // "string"
+
+let res3 = x < y;
+console.log(res3); // true
+console.log(typeof res3); // "boolean"
+
+let res4 = x - y;
+console.log(res4); // NaN
+console.log(typeof res4); // "number"
+ 
